@@ -76,7 +76,7 @@ html, body{
 
 .navbar .nav div ul{
   flex-grow: 1;
-  display: none;
+  display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-evenly;
@@ -117,12 +117,12 @@ html, body{
 
 .main-container{
   background-color: grey;
+  /* position: fixed; */
   display: grid;
-  grid-template-columns: auto auto;
-  padding: 0% 3%;
-  overflow:hidden;
-  padding-bottom: 2%;
-  
+  grid-template-columns: 25% 70%;
+  height: 100%;
+  width: 100%;
+  padding: 0% 2.5%;
 }
 .sidebar{
   /* height: 100%; */
@@ -131,9 +131,8 @@ html, body{
   background-color: rgb(143, 178, 255);
   padding: 3.5% 3.5%;
   border-radius: 64px 0 0 64px;
-  height: auto;
+  margin-bottom: 15%;
 }
-
 
 .sidebar h1{
   padding: 1%;

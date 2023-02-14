@@ -28,6 +28,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: gray; 
   }
+
+  #main{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
   
   *{
     margin: 0;

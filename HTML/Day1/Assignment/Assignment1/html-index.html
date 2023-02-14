@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>My Radix Projects</title>
+    <style>
+        .page-display div {
+            padding: 0.5%;
+            border: solid 1px black;
+        }
+    </style>
+    <script>
+        var bool1 = true
+
+        function showM() {
+            var x = document.getElementById("myNav")
+            if (bool1) {
+                x.style.display = "block"
+                bool1 = !bool1
+            } else {
+                x.style.display = "none"
+                bool1 = !bool1
+            }
+
+            // x.style.display="block"
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-cont"><img src="http://logo.radixoffice.com/images/Logo_2500x1875_(transparent).png"
+                alt="Radixweb" height="150px">
+        </div>
+        <div class="nav">
+            <em class="fa fa-bars" onclick="showM()"></em>
+            <div>
+                <ul id="myNav">
+                    <li><a href="../../../../index.html"> Home </a></li>
+                    <li><a href="../../../html-index.html"> HTML </a></li>
+                    <li><a href="../../../../CSS/css-index.html"> CSS </a></li>
+                    <li><a href="../../../../BootStrap/bootstrap-index.html"> Bootstrap </a></li>
+                    <li><a href="../../../../JavaScript/javascript-index.html"> Javascript </a></li>
+                    <li><a href="../../../../Jquery/jquery-index.html"> Jquery </a></li>
+                    <li><a href="../../../../MiniProject/miniproject-index.html"> Miniproject </a></li>
+                    <li><a href="../../../../SQL/sql-index.html"> SQL </a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h1>Module 1</h1>
+            <h2>Assignments</h2>
+            <ul>
+                <li><a href="./html-index.html">Assignment 1</a> </li>
+                <li><a href="../Assignment2/html-index.html">Assignment 2</a> </li>
+            </ul>
+            <h2>Practice</h2>
+            <ul>
+                <li><a href="../../Practice/Practice1/html-index.html">Practice
+                        1</a> </li>
+                <li><a href="../../Practice/Practice2/html-index.html">Practice
+                        2</a> </li>
+            </ul>
+        </div>
+        <div class="page-display">
+            <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration</title>
+  </head>
+  <body>
+    <header>
+        <h1 class="title">
+            Employee Registration Form
+        </h1>
+    </header>
+
+    <section class="content">
+        <form action="#" method="post">
+            <table>
+              <caption></caption>
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+                <tr>
+                    <td><label for="Name">Name</label></td>
+                    <td><input type="text" placeholder="Enter Your Name" required pattern="[A-Za-z]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="Age">Age</label></td>
+                    <td><input type="text" placeholder="Enter Your Age" required pattern="[0-9]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="Age">Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" value="Male" name="gender"> Male </input>
+                        <input type="radio" id="female" value="Female" name="gender"> Female </input> 
+                    </td>                    
+                </tr>
+                <tr>
+                    <td><label for="Designation">Designation</label></td>
+                    <td><select name="designation" id="designation" required>
+                        <option value="select">-Select-</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="jr-dvp">Junior Developer</option>
+                        <option value="sr-dvp">Senior Developer</option>
+                        <option value="pj-mjr">Project Manager</option>
+                        <option value="sr-pj-mjr">Senior Project Manager</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="Salary">Salary</label></td>
+                    <td><input type="text" placeholder="Enter Your Salary" required pattern="[0-9]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><input type="text" placeholder="Enter Your City" required pattern="[A-Za-z]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" placeholder="Enter Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                </tr>
+                <tr>
+                    <td><label for="DOJ">Date of Joining</label></td>
+                    <td><input type="date" placeholder="Enter Date of Joining" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contact">Contact No.</label></td>
+                    <td><input type="text" placeholder="Enter Your Contact No." required pattern="[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Clear Response" id="reset"></td>
+                    <td><input type="submit" value="Submit" id="submit"></td>
+                </tr>
+            </table>
+
+            
+        </form>
+    </section>
+</body>
+</html>
+
+        </div>
+    </div>
+</body>
+
+</html>

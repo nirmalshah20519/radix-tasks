@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>My Radix Projects</title>
+    <script>
+        var bool1 = true
+
+        function showM() {
+            var x = document.getElementById("myNav")
+            if (bool1) {
+                x.style.display = "block"
+                bool1 = !bool1
+            } else {
+                x.style.display = "none"
+                bool1 = !bool1
+            }
+
+            // x.style.display="block"
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-cont"><img src="http://logo.radixoffice.com/images/Logo_2500x1875_(transparent).png"
+                alt="Radixweb" height="150px">
+        </div>
+        <div class="nav">
+            <em class="fa fa-bars" onclick="showM()"></em>
+            <div>
+                <ul id="myNav">
+                    <li><a href="../index.html"> Home </a></li>
+                    <li><a href="../HTML/html-index.html"> HTML </a></li>
+                    <li><a href="./css-index.html"> CSS </a></li>
+                    <li><a href="../BootStrap/bootstrap-index.html"> Bootstrap </a></li>
+                    <li><a href="../JavaScript/javascript-index.html"> Javascript </a></li>
+                    <li><a href="../Jquery/jquery-index.html"> Jquery </a></li>
+                    <li><a href="./miniproject-index.html"> Miniproject </a></li>
+                    <li><a href="../SQL/sql-index.html"> SQL </a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            Coming Soon
+        </div>
+        <div class="page-display">
+            <img src="http://logo.radixoffice.com/images/Logo_2500x1875_(transparent).png" alt="Radixweb">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  place-items: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.header{
+  height: 12%;
+  background: linear-gradient(180deg, #F68686 0%, #FFF2AC 100%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header .logo-cont{
+  height: 12%;
+  line-height: 100%;
+  width: 25%;
+  padding-left: 2%;
+  padding-top: 0.4%;
+  position: absolute;
+  right: 0;
+}
+
+.header .logo-cont img{
+  display: block;
+  height: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header .navbar{
+  /* height: 100%; */
+  width: 75%;
+  position: absolute;
+  top:2%;
+}
+
+.header .navbar ul{
+  display: inline;
+}
+
+.header .navbar ul li{
+  display: inline-block;
+  width: 15%;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 1%;
+  text-align: center;
+  color: #009DF4;
+  text-shadow: 0px 0px 2px black;
+}
+
+.header .navbar ul li:hover a{
+  text-decoration: none;
+  color: blue;
+  text-shadow: 0px 0px 6px rgb(58, 58, 58);
+  font-size: 1.3em;
+  transition-duration: 500ms;
+}
+
+
+.main{
+  position: relative;
+  height: 84%;
+  background: radial-gradient(24.28% 68% at 43.72% 65.43%, rgba(172, 169, 251, 0.1) 0%, #ACA9FB 100%);
+  
+}
+
+.main .sidebar{
+  background: #B8E1DD;
+  border-radius: 0% 8% 8% 0%;
+  width: 25%;
+  height: 100%;
+  float: left;
+  padding: 2%;
+}
+
+.sidebar .updates{
+  background-color: #f39696;
+  height: 85%;
+  border-radius: 24px;
+  padding-top: 1%;
+}
+
+.sidebar .updates .title{
+  padding: 2%;
+  background-color: #009DF4;
+  color: #f39696;
+  text-shadow: 2px 2px 2px rgb(66, 66, 66);
+  margin: 2%;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  font-size: 2em;
+}
+
+.sidebar .updates .events ul li{
+  background-color: #DCE775;
+  list-style-type: none;
+  margin: 8%;
+  padding: 2%;
+  border-radius: 12px;
+  
+}
+
+.main .content{
+  
+  width:75%;
+  height: 100%;
+  float: right;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+
+
+.main .content .row .cell{
+  border: #f40096 solid 2px;
+  width: 50%;
+  display: inline;
+  float: left;
+  /* height: 100%; */
+}
+.footer{
+  position: relative;
+  height: 4%;
+  background-color: rgb(60, 60, 60);
+}
+
+.footer .center{
+  color: white;
+  text-align: center;
+  padding-top: 0.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#top-left{
+  width: 45%;
+  margin: 2%;
+  background-color: #f39696;
+  height: 90%;
+  border: none;
+  border-radius: 12px;
+}
+
+#top-left .title{
+  font-family:cursive;
+  margin: 1%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 3em;
+  background-color: #009DF4;
+  color: #f39696;
+  text-shadow: 2px 2px 2px rgb(66, 66, 66);
+  padding: 0.6%;
+  border-radius: 0.5em;
+  
+}
+
+#top-left .blog-1{
+  padding: 2.5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+#top-left .blog-1::first-letter{
+  font-size: 2em;
+  color: #009DF4;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+#top-right{
+  padding: 2%;
+  width: 48%;
+  border: none;
+}
+
+#top-right img{
+  box-shadow: 8px 8px 32px rgb(41, 41, 41);
+}
+
+.row .cards{
+  display: inline-block;
+  height: 80%;
+  width: 25%;
+  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  margin: 1% 3%;
+  padding: 1% 1%;
+  box-shadow: 8px 8px 40px gray;
+  border-radius: 16px;
+  
+}
+
+.row .cards .title{
+  background-color: #009DF4;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.3em;
+  color: #f39696;
+  text-shadow: 0.7px 0.7px 0.7px black;
+  position: relative;
+  margin-top: 10%;
+}
+
+.row .cards img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  height: 60%;
+  
+}
+
+

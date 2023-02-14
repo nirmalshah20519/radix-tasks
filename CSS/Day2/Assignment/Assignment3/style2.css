@@ -1,0 +1,122 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  html, body{
+    height: 100%;
+    background-color: bisque;
+  
+  }
+  
+  .container{
+    /* background-color: bisque; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  
+  .container .card{
+    width: calc(max(380px, 25%));
+    height: calc(max(280px, 25%));
+    background-color: white;
+   margin: 16px;
+   border-radius: 24px;
+   box-shadow: 1px 1px 8px rgb(97, 97, 97);
+  
+  }
+  
+  .container .card:hover{
+   box-shadow: 4px 4px 24px rgb(97, 97, 97);
+  
+  }
+  
+  .card{
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+    padding: 2%;
+    row-gap: 16px;
+  }
+  
+  .card .row{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  
+  .card .college{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  
+  .pic img{
+    width: 40%;
+    margin-left: 4%;
+    margin-top: 4%;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  .stu-det p{
+    float: right;
+  }
+  
+  .stu-det p span{
+    font-weight: 700;
+    color: rgb(0, 104, 55);
+  }
+  
+  .col-det p{
+    margin-top: 5%;
+  }
+  
+  .col-det p span{
+    font-weight: 700;
+    color: rgb(0, 104, 55);
+  }
+  
+  .logo img{
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .show-more{
+    font-weight: 600;
+    opacity: 70%;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .show-more a{
+    color: black;
+  }
+  
+  .show-more:hover{
+    font-weight: bold;
+    opacity: 100%;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:1420px) {
+    .container .card{
+      width: calc(max(380px, 40%));
+      height: calc(max(280px, 35%));
+    }
+  }
+  
+  @media screen and (max-width:911px) {
+    .container{
+      justify-content: center;
+    }
+  
+    .container .card{
+      grid-template-rows: 40% 30% 30%;
+    }
+  }

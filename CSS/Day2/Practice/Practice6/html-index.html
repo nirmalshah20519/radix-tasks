@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>My Radix Projects</title>
+    <style>
+        .page-display{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .page-display h2 {
+            text-align: center;
+            color: rebeccapurple;
+            box-shadow: 0px 2px 32px rgb(94, 94, 94);
+            padding: 0.5%;
+            border-radius: 16px;
+        }
+
+        .page-display .cont {
+            height: 90%;
+            /* position: fixed; */
+            overflow-y: scroll;
+        }
+
+        .page-display .img-cont {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .page-display .img-cont img {
+            height: 320px;
+            margin: 0.4% 0.4%;
+            float: right;
+        }
+    </style>
+    <script>
+        var bool1 = true
+
+
+
+
+
+        function showM() {
+            var x = document.getElementById("myNav")
+            if (bool1) {
+                x.style.display = "block"
+                bool1 = !bool1
+            } else {
+                x.style.display = "none"
+                bool1 = !bool1
+            }
+
+            // x.style.display="block"
+        }
+    </script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="navbar">
+        <div class="logo-cont"><img src="http://logo.radixoffice.com/images/Logo_2500x1875_(transparent).png"
+                alt="Radixweb" height="150px">
+        </div>
+        <div class="nav">
+            <em class="fa fa-bars" onclick="showM()"></em>
+            <div>
+                <ul id="myNav">
+                    <li><a href="../../../../index.html"> Home </a></li>
+                    <li><a href="../../../../HTML/html-index.html"> HTML </a></li>
+                    <li><a href="../../../../CSS/css-index.html"> CSS </a></li>
+                    <li><a href="../../../../BootStrap/bootstrap-index.html"> Bootstrap </a></li>
+                    <li><a href="../../../../JavaScript/javascript-index.html"> Javascript </a></li>
+                    <li><a href="../../../../Jquery/jquery-index.html"> Jquery </a></li>
+                    <li><a href="../../../../MiniProject/miniproject-index.html"> Miniproject </a></li>
+                    <li><a href="../../../../SQL/sql-index.html"> SQL </a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h1>Module 1</h1>
+            <h2>Assignments</h2>
+            <ul>
+                <li><a href="../../../Day1/Assignment/Assignment1/html-index.html">Assignment 1</a> </li>
+                <li><a href="../../../Day1/Assignment/Assignment2/html-index.html">Assignment 2</a> </li>
+                <li><a href="../../../Day1/Assignment/Assignment3/html-index.html">Assignment 3</a> </li>
+
+            </ul>
+            <h2>Practice</h2>
+            <ul>
+                <li><a href="../../../Day1/Practice/Practice1/html-index.html">Practice 1</a> </li>
+                <li><a href="../../../Day1/Practice/Practice2/html-index.html">Practice 2</a> </li>
+                <li><a href="../../../Day1/Practice/Practice3/html-index.html">Practice 3</a> </li>
+                <li><a href="../../../Day1/Practice/Practice4/html-index.html">Practice 4</a> </li>
+            </ul>
+            <h1>Module 2</h1>
+            <h2>Assignments</h2>
+            <ul>
+                <li><a href="../../Assignment/Assignment1/html-index.html">Assignment 1</a> </li>
+                <li><a href="../../Assignment/Assignment2/html-index.html">Assignment 2</a> </li>
+                <li><a href="../../Assignment/Assignment3/html-index.html">Assignment 3</a> </li>
+                <li><a href="../../Assignment/Assignment4/html-index.html">Assignment 4</a> </li>
+            </ul>
+            <h2>Practice</h2>
+            <ul>
+                <li><a href="../Practice1/html-index.html">Practice 1</a> </li>
+                <li><a href="../Practice2/html-index.html">Practice 2</a> </li>
+                <li><a href="../Practice3/html-index.html">Practice 3</a> </li>
+                <li><a href="../Practice4/html-index.html">Practice 4</a> </li>
+                <li><a href="../Practice5/html-index.html">Practice 5</a> </li>
+                <li><a href="./html-index.html">Practice 6</a> </li>
+                <li><a href="../Practice7/html-index.html">Practice 7</a> </li>
+                <li><a href="../Practice8/html-index.html">Practice 8</a> </li>
+            </ul>
+        </div>
+        <div class="page-display">
+            <h2>Image Gallery</h2>
+
+            <div class="cont">
+                <div class="img-cont">
+                    <img src="https://source.unsplash.com/random/800×800?sig=0" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=1" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=2" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=3" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=4" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=5" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=6" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=7" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=8" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=9" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=10" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=11" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=12" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=13" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=14" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=15" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=16" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=17" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=18" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=19" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=20" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=21" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=22" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=23" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=24" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=25" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=26" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=27" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=28" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=29" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=30" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=31" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=32" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=33" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=34" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=35" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=36" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=37" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=38" alt="Image">
+                    <img src="https://source.unsplash.com/random/800×800?sig=39" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

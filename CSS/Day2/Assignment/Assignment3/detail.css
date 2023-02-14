@@ -1,0 +1,144 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.menulist h3{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 2%;
+    width: 70%;
+    border-radius: 8px;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.menulist ul{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 2%; */
+    width: 70%;
+    /* border-radius: 8px; */
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+    /* list-style: none; */
+    /* font-size: 1.2em; */
+}
+
+.desc{
+    border: 1px solid rgb(66, 66, 66);
+    display: grid;
+    grid-template-rows: 15% 85%;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mini-det-cont{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.mini-det{
+    padding: 2%;
+    height: fit-content;
+    width: 25%;
+    /* justify-content: space-between; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+}
+
+.mini-det span{
+    font-weight: bold;
+}
+
+.desc .det-txt{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.6em;
+    text-align: center;
+    padding-top: 2%;
+}
+
+@media screen and (max-width:900px) {
+    .menulist h3{
+        width: 100%;
+    }
+    
+    .menulist ul{
+        width: 100%;
+    }
+    .desc .det-txt{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.3em;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .mini-det{
+        padding: 2%;
+        height: fit-content;
+        width: 25%;
+        /* justify-content: space-between; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+    
+    .mini-det span{
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (max-width:680px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+
+    .desc{
+        display: grid;
+        grid-template-rows: 20% 80%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+    .desc .det-txt{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: center;
+        /* padding-top: 2%; */
+    }
+
+    .menulist{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+    .mini-det{
+        font-size: 0.8em;
+    }
+
+}

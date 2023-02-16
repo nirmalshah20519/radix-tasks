@@ -9,7 +9,6 @@
   height: 100%;
 }
 
-
 body {
   margin: 0;
   place-items: center;
@@ -22,16 +21,16 @@ h1 {
   line-height: 1.1;
 }
 
-.header{
+.header {
   height: 12%;
-  background: linear-gradient(180deg, #F68686 0%, #FFF2AC 100%);
+  background: linear-gradient(180deg, #f68686 0%, #fff2ac 100%);
   overflow: hidden;
   display: flex;
   flex-direction: row;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.header .logo-cont{
+.header .logo-cont {
   height: 12%;
   line-height: 100%;
   width: 25%;
@@ -41,36 +40,36 @@ h1 {
   right: 0;
 }
 
-.header .logo-cont img{
+.header .logo-cont img {
   display: block;
   height: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.header .navbar{
+.header .navbar {
   /* height: 100%; */
   width: 75%;
   position: absolute;
-  top:2%;
+  top: 2%;
 }
 
-.header .navbar ul{
+.header .navbar ul {
   display: inline;
 }
 
-.header .navbar ul li{
+.header .navbar ul li {
   display: inline-block;
   width: 15%;
   font-weight: bold;
   font-size: 1.5em;
   padding: 1%;
   text-align: center;
-  color: #009DF4;
+  color: #009df4;
   text-shadow: 0px 0px 2px black;
 }
 
-.header .navbar ul li:hover a{
+.header .navbar ul li:hover a {
   text-decoration: none;
   color: blue;
   text-shadow: 0px 0px 6px rgb(58, 58, 58);
@@ -78,16 +77,18 @@ h1 {
   transition-duration: 500ms;
 }
 
-
-.main{
+.main {
   position: relative;
   height: 84%;
-  background: radial-gradient(24.28% 68% at 43.72% 65.43%, rgba(172, 169, 251, 0.1) 0%, #ACA9FB 100%);
-  
+  background: radial-gradient(
+    24.28% 68% at 43.72% 65.43%,
+    rgba(172, 169, 251, 0.1) 0%,
+    #aca9fb 100%
+  );
 }
 
-.main .sidebar{
-  background: #B8E1DD;
+.main .sidebar {
+  background: #b8e1dd;
   border-radius: 0% 8% 8% 0%;
   width: 25%;
   height: 100%;
@@ -95,16 +96,16 @@ h1 {
   padding: 2%;
 }
 
-.sidebar .updates{
+.sidebar .updates {
   background-color: #f39696;
   height: 85%;
   border-radius: 24px;
   padding-top: 1%;
 }
 
-.sidebar .updates .title{
+.sidebar .updates .title {
   padding: 2%;
-  background-color: #009DF4;
+  background-color: #009df4;
   color: #f39696;
   text-shadow: 2px 2px 2px rgb(66, 66, 66);
   margin: 2%;
@@ -115,93 +116,89 @@ h1 {
   font-size: 2em;
 }
 
-.sidebar .updates .events ul li{
-  background-color: #DCE775;
+.sidebar .updates .events ul li {
+  background-color: #dce775;
   list-style-type: none;
   margin: 8%;
   padding: 2%;
   border-radius: 12px;
-  
 }
 
-.main .content{
-  
-  width:75%;
+.main .content {
+  width: 75%;
   height: 100%;
   float: right;
   display: grid;
   grid-template-rows: 50% 50%;
 }
 
-
-
-.main .content .row .cell{
+.main .content .row .cell {
   border: #f40096 solid 2px;
   width: 50%;
   display: inline;
   float: left;
   /* height: 100%; */
 }
-.footer{
+.footer {
   position: relative;
   height: 4%;
   background-color: rgb(60, 60, 60);
 }
 
-.footer .center{
+.footer .center {
   color: white;
   text-align: center;
   padding-top: 0.5%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#top-left{
+#top-left {
   width: 45%;
   margin: 2%;
   background-color: #f39696;
   height: 90%;
   border: none;
   border-radius: 12px;
+  overflow: scroll;
 }
 
-#top-left .title{
-  font-family:cursive;
+#top-left .title {
+  font-family: cursive;
   margin: 1%;
   text-align: left;
   font-weight: bold;
   font-size: 3em;
-  background-color: #009DF4;
+  background-color: #009df4;
   color: #f39696;
   text-shadow: 2px 2px 2px rgb(66, 66, 66);
   padding: 0.6%;
   border-radius: 0.5em;
-  
 }
 
-#top-left .blog-1{
+#top-left .blog-1 {
   padding: 2.5%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
 }
 
-#top-left .blog-1::first-letter{
+#top-left .blog-1::first-letter {
   font-size: 2em;
-  color: #009DF4;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #009df4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
 }
-#top-right{
+#top-right {
   padding: 2%;
   width: 48%;
   border: none;
 }
 
-#top-right img{
+#top-right img {
   box-shadow: 8px 8px 32px rgb(41, 41, 41);
 }
 
-.row .cards{
+.row .cards {
   display: inline-block;
   height: 80%;
   width: 25%;
@@ -210,11 +207,10 @@ h1 {
   padding: 1% 1%;
   box-shadow: 8px 8px 40px gray;
   border-radius: 16px;
-  
 }
 
-.row .cards .title{
-  background-color: #009DF4;
+.row .cards .title {
+  background-color: #009df4;
   padding: 1%;
   text-align: center;
   font-size: 1.3em;
@@ -224,13 +220,10 @@ h1 {
   margin-top: 10%;
 }
 
-.row .cards img{
+.row .cards img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
   height: 60%;
-  
 }
-
-
